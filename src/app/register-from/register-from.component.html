@@ -23,6 +23,10 @@
             <input type="text" formControlName="password">
             <p *ngIf="userForm.get('password').status == 'INVALID'&& !userForm.get('password').pristine" style="color:red">Debes ingresar tu contraseña</p>
         </div>
+
+        <div>
+          <button (click)="onRegisterClick()">Registrar</button>
+        </div>
       
       </form>
       

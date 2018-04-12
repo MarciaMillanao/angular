@@ -37,4 +37,8 @@ export class RegisterFromComponent implements OnInit {
       console.log("DATA CHANGE >" +JSON.stringify(value));
     });
   }
+
+  onRegisterClick(){
+    this.authService.signup(this.userForm.get("mail").value, this.userForm.get("password").value);
+  }
 }
