@@ -25,7 +25,8 @@ export class RegisterFromComponent implements OnInit {
       //estos serán los datos que solicitará el formulario
       name:[, Validators.required],
       age: [0, Validators.min(18)],
-      mail: ['', Validators.required]
+      mail: ['', Validators.required],
+      password : ['', Validators.required]
     });
 
     this.userForm.statusChanges.subscribe((value:any)=>{
