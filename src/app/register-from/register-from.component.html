@@ -1,0 +1,18 @@
+<h2>
+  Formulario de registro
+</h2>
+
+<form [formGroup]="userForm">
+  <input type="text" formControlName="name">
+  <p *ngIf="userForm.get('name').status == 'INVALID' && !userForm.get('name').pristine" style="color:red">Debes Ingresar tu nombre</p>
+  <input type="number" formControlName="age">
+  <p *ngIf="userForm.get('age').status == 'INVALID'&& !userForm.get('age').pristine" style="color:red">Debe tener mas de 18 años</p>
+  <input type="text" formControlName="mail">
+  <p *ngIf="userForm.get('mail').status == 'INVALID'&& !userForm.get('mail').pristine" style="color:red">Debes ingresar tu email</p>
+</form>
+
+<p>Form value: {{ userForm.value | json }}</p> <!--json convierte los datos ingresados en json-->
+<p>Form Status: {{ userForm.status | json }}</p>
+<!--<p>Form Status: {{ userForm.get('name').status | json }}</p> con get le indico a que elemento quiero afectar
+<p>Form State: {{ userForm.get('name').pristine | json }}</p>
+<p>Form State: {{ userForm.get('name').untouched | json }}</p>-->

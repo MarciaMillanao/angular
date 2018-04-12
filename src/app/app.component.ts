@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Counter } from './counter';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  componentCounter = new Counter(); //Acá guardare los datos de usurio
+
+  onCounterReset(){
+    this.componentCounter = new Counter();
+  }
 }
