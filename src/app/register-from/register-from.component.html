@@ -5,7 +5,7 @@
       
       <form [formGroup]="userForm">
         <div>
-            <input type="text" formControlName="name">
+            <input type="text" formControlName="name" placeholder="Nombre">
             <p *ngIf="userForm.get('name').status == 'INVALID' && !userForm.get('name').pristine" style="color:red">Debes Ingresar tu nombre</p>
         </div>
         
@@ -15,12 +15,12 @@
         </div>
       
         <div>
-            <input type="text" formControlName="mail">
+            <input type="text" formControlName="mail" placeholder="Email">
             <p *ngIf="userForm.get('mail').status == 'INVALID'&& !userForm.get('mail').pristine" style="color:red">Debes ingresar tu email</p>
         </div>
          
         <div>
-            <input type="text" formControlName="password">
+            <input type="text" formControlName="password" placeholder="Contraseña">
             <p *ngIf="userForm.get('password').status == 'INVALID'&& !userForm.get('password').pristine" style="color:red">Debes ingresar tu contraseña</p>
         </div>
 
@@ -30,9 +30,14 @@
       
       </form>
       
-      <p>Form value: {{ userForm.value | json }}</p> <!--json convierte los datos ingresados en json-->
+       <!--<p>Form value: {{ userForm.value | json }}</p>json convierte los datos ingresados en json
       <p>Form Status: {{ userForm.status | json }}</p>
-      <!--<p>Form Status: {{ userForm.get('name').status | json }}</p> con get le indico a que elemento quiero afectar
+      <p>Form Status: {{ userForm.get('name').status | json }}</p> con get le indico a que elemento quiero afectar
       <p>Form State: {{ userForm.get('name').pristine | json }}</p>
-      <p>Form State: {{ userForm.get('name').untouched | json }}</p>-->
+      <p>Form State: {{ userForm.get('name').untouched | json }}</p> Todo este código, es para ver lo que hace por dentro/debajo el código-->
 </div>
+
+<div>
+    <button (click)="onClickLogout()">Desloguear</button><!--Boton de deslogueo, debiera estar en otro componente -->
+</div>
+

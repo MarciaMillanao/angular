@@ -41,4 +41,8 @@ export class RegisterFromComponent implements OnInit {
   onRegisterClick(){
     this.authService.signup(this.userForm.get("mail").value, this.userForm.get("password").value);
   }
+
+  onClickLogout(){
+    this.authService.logout(); //acá me deslogueo
+  }
 }
