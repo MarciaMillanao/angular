@@ -39,4 +39,8 @@ export class ControlComponent implements OnInit {
       counter : this.counter.currentValue
     })
   }
+
+  deleteFileUpload(){
+    this.af.list("/counters").remove()
+  }
 }
