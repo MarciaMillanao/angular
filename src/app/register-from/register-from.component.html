@@ -20,7 +20,7 @@
         </div>
          
         <div>
-            <input type="text" formControlName="password" placeholder="Contraseña">
+            <input type="password" formControlName="password" placeholder="Contraseña">
             <p *ngIf="userForm.get('password').status == 'INVALID'&& !userForm.get('password').pristine" style="color:red">Debes ingresar tu contraseña</p>
         </div>
 
