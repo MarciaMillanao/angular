@@ -1,0 +1,9 @@
+#list{
+    float: right;
+    top:0;
+    position:absolute;
+    right: 0;
+    background-color: blanchedalmond;
+    height: 100%;
+    padding: 2em;
+}

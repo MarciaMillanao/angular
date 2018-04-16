@@ -13,8 +13,8 @@ import { AngularFireModule } from 'angularfire2'; //acá importo todo desde la p
 import { environment } from '../environments/environment';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AuthService } from './auth.service'; //auth service tenemos que crearlo luego nosotros desde la consola
-import { AngularFireDatabase } from 'angularfire2/database-deprecated;
-import { CounterListComponent } from './counter-list/counter-list.component'';
+import { AngularFireDatabase } from 'angularfire2/database-deprecated';
+import { CounterListComponent } from './counter-list/counter-list.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +22,8 @@ import { CounterListComponent } from './counter-list/counter-list.component'';
     TitleComponent,
     DisplayComponent,
     ControlComponent,
-    RegisterFromComponen,
-    CounterListComponentt
+    RegisterFromComponent,
+    CounterListComponent
   ],
   imports: [
     BrowserModule,
