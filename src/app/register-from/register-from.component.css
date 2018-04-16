@@ -1,0 +1,21 @@
+#formulario{
+    text-align: center;
+}
+
+input{
+    padding: 1em;
+    color: aliceblue;
+    margin: 1em;
+}
+
+#btn_desloguear{
+    text-align: center;
+    margin: 1em;
+}
+
+button{
+    padding:1em;
+    background-color: brown;
+    border-radius: 2em;
+    color: aliceblue;
+}

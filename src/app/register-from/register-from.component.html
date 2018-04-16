@@ -1,4 +1,4 @@
-<div *ngIf="!(authService.user | async)"><!--esto es para que el formulario solo aparezca en la pantalla si no estamos logiados-->
+<div id="formulario" *ngIf="!(authService.user | async)"><!--esto es para que el formulario solo aparezca en la pantalla si no estamos logiados-->
     <h2>
         Formulario de registro
       </h2>
@@ -37,7 +37,7 @@
       <p>Form State: {{ userForm.get('name').untouched | json }}</p> Todo este código, es para ver lo que hace por dentro/debajo el código-->
 </div>
 
-<div>
+<div id="btn_desloguear">
     <button (click)="onClickLogout()">Desloguear</button><!--Boton de deslogueo, debiera estar en otro componente -->
 </div>
 
