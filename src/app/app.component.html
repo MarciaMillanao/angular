@@ -3,6 +3,7 @@
   <app-title></app-title>
   <app-display [counter]="componentCounter"></app-display> <!-- con [] ontengo la informacion -->
   <app-control [counter]="componentCounter" (onReset)="onCounterReset($event)"></app-control>
-  <app-register-from></app-register-from>
+  <!--<app-register-from></app-register-from> vamos a borrar este componente porque ahora lo dejaremos desde register-->
   <app-counter-list></app-counter-list>
+  <router-outlet></router-outlet><!--aca es donde veremos nuestro formulario-->
 </div>

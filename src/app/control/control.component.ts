@@ -41,6 +41,7 @@ export class ControlComponent implements OnInit {
   }
 
   deleteFileUpload(){
-    this.af.list("/counters").remove()
+    this.af.list("/counters").remove()//con list tengo accexo a mi arreglo completo y con objet obtengo la infoemcion de cada elemento, pero tengo que arregarle el id
   }
+
 }

@@ -15,6 +15,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AuthService } from './auth.service'; //auth service tenemos que crearlo luego nosotros desde la consola
 import { AngularFireDatabase } from 'angularfire2/database-deprecated';
 import { CounterListComponent } from './counter-list/counter-list.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { CounterListComponent } from './counter-list/counter-list.component';
     BrowserModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase), //Acá inicializamos feribase
-    AngularFireAuthModule
+    AngularFireAuthModule, AppRoutingModule
   ],
   providers: [AuthService, AngularFireDatabase],//acá inyecto todo lo que voy a necesitar
   bootstrap: [AppComponent]
